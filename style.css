@@ -1,16 +1,17 @@
 :root {
-  --bg: #f7f3ee;
-  --card: #fffbf4;
-  --border: #e6ded3;
-  --text: #2b2b2b;
-  --muted: #6b6b6b;
-  --accent: #8b5e3c; /* coklat utama */
-  --accent-2: #b98b5d; /* coklat terang */
-  --accent-3: #e3c9a8; /* highlight lembut */
+  --bg: #e8f1ef;        
+  --card: #fefefe;     
+  --border: #b2c8c3;   
+  --text: #1d2624;    
+  --muted: #5a6d6a;    
+  --accent: #006d77;    
+  --accent-2: #83c5be;  
+  --accent-3: #edf6f9;  
   --radius: 16px;
   --pad: 14px;
   --shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
 }
+
 
 label,
 legend,
@@ -205,3 +206,4 @@ button[type="submit"]:active {
     max-width: 100%;
   }
 } */
+
