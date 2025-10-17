@@ -1,0 +1,184 @@
+:root {
+  --bg: #f5f3ff;
+  --card: #ffffff;
+  --border: #c5b7ff;
+  --text: #1e1a2d;
+  --muted: #6a679e;
+  --accent: #5a3fc0;
+  --accent-2: #7b5df7;
+  --accent-3: #decff9;
+  --radius: 16px;
+  --pad: 14px;
+  --shadow: 0 6px 20px rgba(90, 63, 192, 0.15);
+}
+
+label,
+legend,
+span {
+  text-decoration: none !important;
+}
+
+html,
+body {
+  background: radial-gradient(
+    1200px 600px at 20% 0%,
+    #f2ecff 0%,
+    var(--bg) 60%
+  );
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.55;
+}
+
+h2 {
+  max-width: 760px;
+  margin: 28px auto 14px;
+  padding: 0 16px;
+  font-size: 26px;
+  letter-spacing: 0.2px;
+  color: var(--accent);
+}
+
+form {
+  max-width: 760px;
+  margin: 0 auto 40px;
+  padding: 18px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) + 6px);
+  box-shadow: var(--shadow);
+}
+
+fieldset {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin: 14px 0 18px;
+  background: #fff;
+}
+
+legend {
+  color: var(--muted);
+  font-size: 14px;
+  padding: 0 8px;
+  margin-left: 8px;
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 14px 0;
+  display: grid;
+  gap: 6px;
+}
+
+label {
+  font-weight: 600;
+  color: #2d2a3f;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+input[type="email"],
+select {
+  width: 100%;
+  max-width: 360px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fff;
+  outline: none;
+}
+
+::placeholder {
+  color: #8b84b8;
+}
+
+input[type="text"]:hover,
+input[type="tel"]:hover,
+input[type="date"]:hover,
+input[type="email"]:hover,
+select:hover {
+  border-color: var(--accent-3);
+  background: #fff;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+select:focus {
+  border-color: var(--accent-2);
+  box-shadow: 0 0 0 3px rgba(123, 93, 247, 0.2);
+}
+
+.inline {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.inline input[type="radio"] {
+  transform: translateY(1px);
+  cursor: pointer;
+  accent-color: var(--accent-2);
+}
+
+.inline label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  color: #3a3560;
+  cursor: pointer;
+  padding: 6px 10px;
+  border: 1px dashed transparent;
+  border-radius: 10px;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.inline label:hover {
+  background: var(--accent-3);
+  border-color: var(--accent-3);
+}
+
+li > span {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 700;
+  color: #2e2950;
+}
+
+button[type="submit"] {
+  margin-top: 6px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--accent-2), var(--accent));
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(90, 63, 192, 0.28);
+}
+
+button[type="submit"]:hover {
+  filter: brightness(1.03);
+  box-shadow: 0 8px 22px rgba(124, 96, 255, 0.33);
+  transform: translateY(-1px);
+  color: black;
+}
+
+button[type="submit"]:active {
+  transform: translateY(1px);
+}
